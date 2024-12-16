@@ -1,0 +1,7 @@
+.vsconfig
+Assembly-CSharp.csproj
+RacingGame.sln
+.vs/
+Library/
+Logs/
+obj/
