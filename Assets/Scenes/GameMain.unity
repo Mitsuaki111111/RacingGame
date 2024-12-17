@@ -18693,13 +18693,14 @@ GameObject:
   - component: {fileID: 417715724}
   - component: {fileID: 417715723}
   - component: {fileID: 417715722}
+  - component: {fileID: 417715726}
   m_Layer: 0
   m_Name: LapCompleteTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &417715722
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18715,7 +18716,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18728,7 +18729,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417715721}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -18786,6 +18787,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -35.149, z: 0}
+--- !u!114 &417715726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417715721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2981ebeac76d3f49a3d69e18c86f2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LapCompleteTrig: {fileID: 417715721}
+  HalfLapTrig: {fileID: 1940053604}
+  MinuteDisplay: {fileID: 991700392}
+  SecondDisplay: {fileID: 80125522}
+  MilliDisplay: {fileID: 1294864542}
+  LapTimeBox: {fileID: 0}
 --- !u!1 &419761344
 GameObject:
   m_ObjectHideFlags: 0
